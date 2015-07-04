@@ -15,6 +15,9 @@ public class NetworkViewManager : MonoBehaviour
 		GUILayout.Label("Connections" + Network.connections.Length.ToString ());
 
 		if (connected) {
+			GUILayout.Space (40);
+			GUILayout.BeginHorizontal (GUILayout.Width (400));
+
 			if (GUILayout.Button ("Disconnect")) {
 				//せつだん
 				Network.Disconnect ();
